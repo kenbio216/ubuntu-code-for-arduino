@@ -1,0 +1,11 @@
+#常见的arduino指令
+
+#烧录程序
+arduino-cli compile --fqbn esp8266:esp8266:nodemcuv2 esp8266_task1-3
+
+#下载程序
+arduino-cli upload -p /dev/ttyUSB0 --fqbn esp8266:esp8266:nodemcuv2 MyFirstSketch
+
+#打开串口监视器
+screen /dev/ttyUSB0 115200
+
